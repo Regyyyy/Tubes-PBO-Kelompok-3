@@ -10,11 +10,9 @@ package com.mycompany.perpustakaankampus;
  */
 import java.util.*;
 import java.util.Scanner;
-import SistemPerpustakaan.Perpustakaan;
-import SistemPerpustakaan.Rak;
-import SistemPerpustakaan.Buku;
 
-public class Mahasiswa extends Guest {
+public class Mahasiswa extends Guest implements Logout {
+    Scanner input = new Scanner(System.in);
     private String username;
     private String password;
     private String nama;
@@ -47,7 +45,7 @@ public class Mahasiswa extends Guest {
         } else if (pilihan.equals("3")) {
             melihatRiwayat();
         } else if (pilihan.equals("0")) {
-            logout();
+            logoutAkun();
         }
     }
     //menampilkan menu riwayat peminjaman
@@ -79,7 +77,7 @@ public class Mahasiswa extends Guest {
     //memperpanjang peminjaman buku
     public void extendPeminjaman() {}
     
-    public void logout() {
+    public void logoutAkun() {
         super.menuUtama();
     }
     /**

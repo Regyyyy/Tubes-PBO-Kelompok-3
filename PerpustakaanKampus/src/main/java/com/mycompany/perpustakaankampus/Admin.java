@@ -12,19 +12,20 @@ package com.mycompany.perpustakaankampus;
 
 import java.util.*;
 import java.util.Scanner;
-import SistemPerpustakaan.Perpustakaan;
-import SistemPerpustakaan.Rak;
-import SistemPerpustakaan.Buku;
 
+<<<<<<< Updated upstream:PerpustakaanKampus/src/main/java/com/mycompany/perpustakaankampus/Pustakawan.java
 public class Admin extends Guest{
+=======
+public class Admin extends Guest implements Logout{
+>>>>>>> Stashed changes:PerpustakaanKampus/src/main/java/com/mycompany/perpustakaankampus/Admin.java
     private String username;
     private String password;
     private String nama;
     private String kodePustakawan;
     
-    public Pustakawan(){}
+    public Admin(){}
     
-    public Pustakawan(String username, String password, String nama, String kodePustakawan, Perpustakaan lib, DataLogin login){
+    public Admin(String username, String password, String nama, String kodePustakawan, Perpustakaan lib, DataLogin login){
         super(lib,login);
         this.username = username;
         this.password = password;
@@ -34,7 +35,7 @@ public class Admin extends Guest{
     
     public void menuUtama() {
         System.out.println("\n===============HOME===============");
-        System.out.println("Login as "+nama+" (Pustakawan)");
+        System.out.println("Login as "+nama+" (Admin)");
         System.out.println("1. Login");
         System.out.println("2. List semua buku");
         System.out.println("3. Peminjaman buku");
@@ -56,7 +57,7 @@ public class Admin extends Guest{
         } else if (pilihan.equals("5")) {
             menambahBuku();
         } else if (pilihan.equals("0")) {
-            logout();
+            logoutAkun();
         }
     }
     
@@ -173,7 +174,7 @@ public class Admin extends Guest{
         
     }
     
-    public void logout() {
+    public void logoutAkun() {
         super.menuUtama();
     }
     /**

@@ -12,19 +12,19 @@ import java.util.*;
 
 public class DataLogin {
     private List<Mahasiswa> dataLoginMahasiswa;
-    private List<Pustakawan> dataLoginPustakawan;
+    private List<Admin> dataLoginAdmin;
     
     public DataLogin() {
         dataLoginMahasiswa = new ArrayList();
-        dataLoginPustakawan = new ArrayList();
+        dataLoginAdmin = new ArrayList();
     }
     
     public void addAkunMahasiswa(Mahasiswa mhs) {
         dataLoginMahasiswa.add(mhs);
     }
     
-    public void addAkunPustakawan(Pustakawan p) {
-        dataLoginPustakawan.add(p);
+    public void addAkunAdmin(Admin p) {
+        dataLoginAdmin.add(p);
     }
     /*
     untuk mengembalikan objek mahasiswa dengan nama yang sama dengan input
@@ -47,15 +47,19 @@ public class DataLogin {
     untuk mengembalikan objek mahasiswa dengan nama yang sama dengan input
     asumsi tidak ada mahasiswa yang memiliki nama yang sama
     */
+<<<<<<< Updated upstream
     public Admin cariPustakawan(String username) {
+=======
+    public Admin cariAdmin(String username) {
+>>>>>>> Stashed changes
         int i = 0;
         boolean found = false;
-        while (!found && i < dataLoginPustakawan.size()) {
-            found = dataLoginPustakawan.get(i).getUsername().equals(username);
+        while (!found && i < dataLoginAdmin.size()) {
+            found = dataLoginAdmin.get(i).getUsername().equals(username);
             i++;
         }
         if (found) {
-            return dataLoginPustakawan.get(i-1);
+            return dataLoginAdmin.get(i-1);
         } else {
             return null;
         }

@@ -8,9 +8,6 @@ package com.mycompany.perpustakaankampus;
  *
  * @author User
  */
-import SistemPerpustakaan.Perpustakaan;
-import SistemPerpustakaan.Rak;
-import SistemPerpustakaan.Buku;
 
 public class RiwayatPeminjaman {
     private Buku buku;

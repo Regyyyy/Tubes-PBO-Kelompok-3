@@ -9,9 +9,6 @@ package com.mycompany.perpustakaankampus;
  * @author User
  */
 import java.util.Scanner;
-import SistemPerpustakaan.Perpustakaan;
-import SistemPerpustakaan.Rak;
-import SistemPerpustakaan.Buku;
 
 public class Guest {
     public Perpustakaan lib;
@@ -70,7 +67,7 @@ public class Guest {
                 String username = input.nextLine();
                 System.out.print("Password : ");
                 String password = input.nextLine();
-                Pustakawan terdaftar = verifLogin.cariPustakawan(username);
+                Admin terdaftar = verifLogin.cariAdmin(username);
                 if (terdaftar != null) {
                     if (password.equals(terdaftar.getPassword())) {
                         System.out.println("Login Berhasil");
