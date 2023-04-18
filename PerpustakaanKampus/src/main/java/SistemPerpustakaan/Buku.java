@@ -15,7 +15,6 @@ public class Buku {
     private String kategoriBuku;
     private int tahunTerbit;
     protected int stokBuku;
-    private String sinopsis;
     
     public Buku() {};
     
@@ -71,8 +70,5 @@ public class Buku {
         return stokBuku;
     }
     
-    public String getSinopsis(){
-        return sinopsis;
-    }
     
 }
