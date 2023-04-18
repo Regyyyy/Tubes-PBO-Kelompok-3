@@ -12,7 +12,8 @@ import java.util.*;
 
 public class DataLogin {
     private List<Mahasiswa> dataLoginMahasiswa;
-    private List<Admin> dataLoginPustakawan;
+    private List<Admin> dataLoginAdmin;
+    private String jenisAkun;
     
     public DataLogin() {
         dataLoginMahasiswa = new ArrayList();
@@ -23,7 +24,7 @@ public class DataLogin {
         dataLoginMahasiswa.add(mhs);
     }
     
-    public void addAkunPustakawan(Pustakawan p) {
+    public void addAkunAdmin(Admin p) {
         dataLoginAdmin.add(p);
     }
     /*
@@ -50,12 +51,12 @@ public class DataLogin {
     public Admin cariAdmin(String username) {
         int i = 0;
         boolean found = false;
-        while (!found && i < dataLoginPustakawan.size()) {
-            found = dataLoginPustakawan.get(i).getUsername().equals(username);
+        while (!found && i < dataLoginAdmin.size()) {
+            found = dataLoginAdmin.get(i).getUsername().equals(username);
             i++;
         }
         if (found) {
-            return dataLoginPustakawan.get(i-1);
+            return dataLoginAdmin.get(i-1);
         } else {
             return null;
         }
