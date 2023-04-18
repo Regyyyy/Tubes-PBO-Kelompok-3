@@ -15,16 +15,18 @@ public class Buku {
     private String kategoriBuku;
     private int tahunTerbit;
     protected int stokBuku;
+    private String sinopsis;
     
     public Buku() {};
     
-    public Buku(int kodeBuku, String judulBuku, String author, String kategoriBuku, int tahunTerbit, int stokBuku){
+    public Buku(int kodeBuku, String judulBuku, String author, String kategoriBuku, int tahunTerbit, int stokBuku, String sinopsis){
         this.kodeBuku = kodeBuku;
         this.judulBuku = judulBuku;
         this.author = author;
         this.kategoriBuku = kategoriBuku;
         this.tahunTerbit = tahunTerbit;
         this.stokBuku = stokBuku;
+        this.sinopsis = sinopsis;
     };
 
     /**
@@ -69,5 +71,8 @@ public class Buku {
         return stokBuku;
     }
     
+    public String getSinopsis(){
+        return sinopsis;
+    }
     
 }
