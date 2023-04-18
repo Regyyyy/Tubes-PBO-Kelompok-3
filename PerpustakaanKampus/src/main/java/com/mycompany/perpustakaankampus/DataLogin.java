@@ -47,11 +47,8 @@ public class DataLogin {
     untuk mengembalikan objek mahasiswa dengan nama yang sama dengan input
     asumsi tidak ada mahasiswa yang memiliki nama yang sama
     */
-<<<<<<< Updated upstream
-    public Admin cariPustakawan(String username) {
-=======
+
     public Admin cariAdmin(String username) {
->>>>>>> Stashed changes
         int i = 0;
         boolean found = false;
         while (!found && i < dataLoginAdmin.size()) {
