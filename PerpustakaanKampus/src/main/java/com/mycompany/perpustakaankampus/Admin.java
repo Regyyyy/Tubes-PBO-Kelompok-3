@@ -60,6 +60,7 @@ public class Admin extends Guest{
         }
     }
     
+    //konfirmasi
     public void peminjamanBuku() {
         System.out.println("\n===============PEMINJAMAN BUKU===============");
         System.out.print("Username mahasiswa : ");
@@ -94,6 +95,7 @@ public class Admin extends Guest{
         menuUtama();
     }
     
+    //konfirmasi
     public void pengembalianBuku() {
         System.out.println("\n===============PENGEMBALIAN BUKU===============");
         System.out.print("Username mahasiswa : ");
