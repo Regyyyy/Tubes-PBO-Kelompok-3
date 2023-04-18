@@ -76,6 +76,15 @@ public class Mahasiswa extends Guest {
             menuUtama();
         }
     }
+    
+    //meminjam buku
+    public void meminjamBuku(){
+    }
+    
+    //mengembalikan buku(){
+   
+    }
+    
     //memperpanjang peminjaman buku
     public void extendPeminjaman() {}
     
