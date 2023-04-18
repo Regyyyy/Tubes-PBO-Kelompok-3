@@ -22,9 +22,9 @@ public class Admin extends Guest{
     private String nama;
     private String kodePustakawan;
     
-    public Admin(){}
+    public Pustakawan(){}
     
-    public Admin(String username, String password, String nama, String kodePustakawan, Perpustakaan lib, DataLogin login){
+    public Pustakawan(String username, String password, String nama, String kodePustakawan, Perpustakaan lib, DataLogin login){
         super(lib,login);
         this.username = username;
         this.password = password;
