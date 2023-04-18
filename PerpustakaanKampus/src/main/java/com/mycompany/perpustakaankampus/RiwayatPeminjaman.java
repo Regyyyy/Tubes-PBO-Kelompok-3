@@ -18,11 +18,10 @@ public class RiwayatPeminjaman {
     private String batasPinjam;
     private String extend;
     public RiwayatPeminjaman() {}
-    public RiwayatPeminjaman(Buku buku, String tanggalPinjam, String extend) {
+    public RiwayatPeminjaman(Buku buku, String tanggalPinjam) {
         this.buku = buku;
         this.tanggalPinjam = tanggalPinjam;
         this.batasPinjam = "";
-        this.extend = "";
     }
 
     /**
@@ -46,11 +45,6 @@ public class RiwayatPeminjaman {
         return batasPinjam;
     }
 
-    /**
-     * @return the extend
-     */
-    public String getExtend() {
-        return extend;
-    }
+    
     
 }
