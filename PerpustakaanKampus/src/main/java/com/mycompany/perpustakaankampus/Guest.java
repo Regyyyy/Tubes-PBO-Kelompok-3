@@ -40,7 +40,7 @@ public class Guest {
         System.out.println("Ketik 0 untuk membatalkan login");
         boolean benar = false;
         while (!benar) {
-            System.out.print("Login as\n1. Mahasiswa\n2. Pustakawan\nKetik nomor pilihan : ");
+            System.out.print("Login as\n1. Mahasiswa\n2. Admin\nKetik nomor pilihan : ");
             String role = input.nextLine();
             //jika input 0 maka proses login batal
             if (role.equals("0")) {

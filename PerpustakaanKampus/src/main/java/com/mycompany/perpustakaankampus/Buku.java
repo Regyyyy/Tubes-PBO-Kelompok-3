@@ -19,14 +19,13 @@ public class Buku {
     
     public Buku() {};
     
-    public Buku(int kodeBuku, String judulBuku, String author, String kategoriBuku, int tahunTerbit, int stokBuku, String sinopsis){
+    public Buku(int kodeBuku, String judulBuku, String author, String kategoriBuku, int tahunTerbit, int stokBuku){
         this.kodeBuku = kodeBuku;
         this.judulBuku = judulBuku;
         this.author = author;
         this.kategoriBuku = kategoriBuku;
         this.tahunTerbit = tahunTerbit;
         this.stokBuku = stokBuku;
-        this.sinopsis = sinopsis;
     };
     
     public Buku(int kodeBuku, String judulBuku, String author, String kategoriBuku, int tahunTerbit, int stokBuku, String sinopsis){

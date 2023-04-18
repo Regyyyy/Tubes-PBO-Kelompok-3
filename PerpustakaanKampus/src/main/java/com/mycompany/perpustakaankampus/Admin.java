@@ -13,15 +13,14 @@ package com.mycompany.perpustakaankampus;
 import java.util.*;
 import java.util.Scanner;
 
-<<<<<<< Updated upstream:PerpustakaanKampus/src/main/java/com/mycompany/perpustakaankampus/Pustakawan.java
-public class Admin extends Guest{
-=======
 public class Admin extends Guest implements Logout{
->>>>>>> Stashed changes:PerpustakaanKampus/src/main/java/com/mycompany/perpustakaankampus/Admin.java
+
     private String username;
     private String password;
     private String nama;
     private String kodePustakawan;
+    
+    
     
     public Admin(){}
     
