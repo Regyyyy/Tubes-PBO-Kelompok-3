@@ -12,11 +12,11 @@ import java.util.*;
 
 public class DataLogin {
     private List<Mahasiswa> dataLoginMahasiswa;
-    private List<Admin> dataLoginPustakawan;
+    private List<Pustakawan> dataLoginPustakawan;
     
     public DataLogin() {
         dataLoginMahasiswa = new ArrayList();
-        dataLoginAdmin = new ArrayList();
+        dataLoginPustakawan = new ArrayList();
     }
     
     public void addAkunMahasiswa(Mahasiswa mhs) {
@@ -24,7 +24,7 @@ public class DataLogin {
     }
     
     public void addAkunPustakawan(Pustakawan p) {
-        dataLoginAdmin.add(p);
+        dataLoginPustakawan.add(p);
     }
     /*
     untuk mengembalikan objek mahasiswa dengan nama yang sama dengan input
@@ -47,7 +47,7 @@ public class DataLogin {
     untuk mengembalikan objek mahasiswa dengan nama yang sama dengan input
     asumsi tidak ada mahasiswa yang memiliki nama yang sama
     */
-    public Admin cariAdmin(String username) {
+    public Admin cariPustakawan(String username) {
         int i = 0;
         boolean found = false;
         while (!found && i < dataLoginPustakawan.size()) {
