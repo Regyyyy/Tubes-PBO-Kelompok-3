@@ -16,15 +16,15 @@ import SistemPerpustakaan.Perpustakaan;
 import SistemPerpustakaan.Rak;
 import SistemPerpustakaan.Buku;
 
-public class Pustakawan extends Guest{
+public class Admin extends Guest{
     private String username;
     private String password;
     private String nama;
     private String kodePustakawan;
     
-    public Pustakawan(){}
+    public Admin(){}
     
-    public Pustakawan(String username, String password, String nama, String kodePustakawan, Perpustakaan lib, DataLogin login){
+    public Admin(String username, String password, String nama, String kodePustakawan, Perpustakaan lib, DataLogin login){
         super(lib,login);
         this.username = username;
         this.password = password;
